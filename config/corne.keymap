@@ -48,7 +48,7 @@
             quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 13 14 15 16 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41 42 43 44>;
         };
 
         rhm: right_hand_positional_hold_tap {
@@ -81,7 +81,7 @@
         default_layer {
             bindings = <
 &none &kp Q       &kp W       &kp E        &kp R         &kp T       &kp Y       &kp U        &kp I        &kp O       &kp P          &none
-&none &lhm LGUI A &lhm LALT S &lhm LCTRL D &lhm LSHFT F  &kp G       &kp H       &hot RSHFT J &hot RCTRL K &hot RALT L &hot RGUI SEMI &none
+&none &hot LGUI A &hot LALT S &hot LCTRL D &hot LSHFT F  &kp G       &kp H       &hot RSHFT J &hot RCTRL K &hot RALT L &hot RGUI SEMI &none
 &none &kp Z       &kp X       &kp C        &kp V         &kp B       &kp N       &kp M        &kp COMMA    &kp DOT     &kp FSLH       &none
                               &lt MED ESC  &lt NAV SPACE &kp TAB     &lt SYM RET &lt NUM BSPC &lt FUN DEL
                     >;
