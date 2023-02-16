@@ -24,26 +24,25 @@
 
 / {
     behaviors {
-        lhm: left_hand_positional_hold_tap {
+        cht: cmd_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_POSITIONAL_HOLD_TAP";
+            label = "CMD_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <6 7 8 9 10 11 13 14 15 16 18 19 20 21 22 23 30 31 32 33 34 35 36 37 38 39 40 41>;
+            hold-trigger-key-positions = <2 3 4 5 6 7 8 9 10 11 14 15 16 18 19 20 21 22 23 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
 
-        rhm: right_hand_positional_hold_tap {
+        bht: base_hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "RIGHT_POSITIONAL_HOLD_TAP";
+            label = "BASE_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 16 17 19 20 21 22 24 25 26 27 28 29 36 37 38 39 40 41>;
         };
     };
 
@@ -53,7 +52,7 @@
         default_layer {
             bindings = <
     &none &kp Q       &kp W       &kp E        &kp R         &kp T       &kp Y       &kp U        &kp I        &kp O       &kp P          &none
-    &none &lhm LGUI A &lhm LALT S &lhm LCTRL D &lhm LSHFT F  &kp G       &kp H       &rhm RSHFT J &rhm RCTRL K &rhm RALT L &rhm RGUI SEMI &none
+    &none &cht LGUI A &bht LALT S &bht LCTRL D &bht LSHFT F  &kp G       &kp H       &bht RSHFT J &bht RCTRL K &bht RALT L &bht RGUI SEMI &none
     &none &kp Z       &kp X       &kp C        &kp V         &kp B       &kp N       &kp M        &kp COMMA    &kp DOT     &kp FSLH       &none
                                   &lt MED ESC  &lt NAV SPACE &kp TAB     &lt SYM RET &lt NUM BSPC &lt FUN DEL
             >;
