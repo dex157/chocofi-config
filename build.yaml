@@ -1,5 +1,5 @@
 include:
-  - board: nfrmicro_13_52833
+  - board: nrfmicro_13_52833
     shield: corne_left
-  - board: nfrmicro_13_52833
+  - board: nrfmicro_13_52833
     shield: corne_right
